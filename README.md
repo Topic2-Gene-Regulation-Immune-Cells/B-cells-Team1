@@ -10,6 +10,6 @@ You will have to submit a Jupyter Notebook with your code & plotting/results, so
 
 Also, do not forget to clean up this ReadMe and edit it, so that any external member of the course could read & comprehend what you did in your project. 
 
-Good luck! 
+Good luck
 
 
