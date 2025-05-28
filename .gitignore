@@ -1,0 +1,5 @@
+data/1.ATAC-Seq data.csv
+data/2.RNA-Seq data.csv
+data/ATAC_QCmatric.csv
+data/ATAC_QCmatric_ReadStatistics.csv
+data/Transcript, Coding, and Exon Start and End Positions.csv
