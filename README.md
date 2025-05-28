@@ -8,4 +8,4 @@ To implement the collective virtual environment:
 
 cd *project directory*\
 conda env create -f environment.yml\
-conda activate envBCells1\
+conda activate envBCells1
