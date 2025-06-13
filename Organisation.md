@@ -22,6 +22,7 @@
                 ATAC matrix
             Plot: 
                 Histogram -> mean signal across all samples for each Peak (Peaks mit low mean signal dann evtl. entfernen)
+            -> done?
 
         b. Do promoters exhibit specific signals vs enhancers?
             Daten:
