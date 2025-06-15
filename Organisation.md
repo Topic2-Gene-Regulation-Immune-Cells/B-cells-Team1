@@ -7,6 +7,7 @@
             Plot: 
                 Scatterplot (ATAC signal vs InputCellNumber, PF.reads, etc.)
                 Correlation heatmap (mean ATAC signal and QC metrics)
+    Done            
 
         b. Should some cell types be removed / normalization?
             Daten: 
@@ -15,6 +16,7 @@
             Plot: 
                 Boxplot (ATAC signal distribution per CellType -> B-Zellen einzeln anschauen)
                 Outlier untersuchen 
+    Done
 
     ii. How variable is the chromatin signal for CREs across cells?
         a. Should peaks be removed due to lack of signal?
