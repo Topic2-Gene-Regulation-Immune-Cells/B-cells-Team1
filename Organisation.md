@@ -6,8 +6,7 @@
                 QC matrix: columns: InputCellNumber, PF.reads, %fragment_1Kb_TSS, Paired.read.after.removing.PCR.duplication
             Plot: 
                 Scatterplot (ATAC signal vs InputCellNumber, PF.reads, etc.)
-                Correlation heatmap (mean ATAC signal and QC metrics)
-    Done            
+                Correlation heatmap (mean ATAC signal and QC metrics)          
 
         b. Should some cell types be removed / normalization?
             Daten: 
@@ -45,6 +44,7 @@
                 Transkripi (peaks annotieren?)
             Plot:
                 Boxplot (Signal per category (Intronic / Intergenic / Promoter))
+    Done
 
     iii. Do related cell types cluster together based on ATAC signal?
         a. Does clustering reproduce known relationship?
@@ -93,3 +93,4 @@
             Plot: 
                 Cluster actibity plot
                 über Differenzierung / Lineage?
+    Done
