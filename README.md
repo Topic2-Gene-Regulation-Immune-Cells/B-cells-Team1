@@ -18,4 +18,6 @@ conda activate envBCells1
 
 ![PCA-Plot](figures/PCA_RNA_vs_ATAC.png)
 
-![UMAP](figures/UMAP of ATAC peaks.png)
+![UMAP](figures/UMAP_ATAC_peaks.png)
+
+
