@@ -14,6 +14,6 @@ conda activate envBCells1
 
 ### RNA vs ATAC
 
-![RNA vs ATAC dendrogramm](figures/dendogramm_RNA_vs_ATAC.png)
+![RNA vs ATAC dendrogramm](figures/dendrogramm_RNA_vs_ATAC.png)
 
 ![PCA-Plot](figures/PCA_RNA_vs_ATAC.png)
