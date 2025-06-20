@@ -106,6 +106,8 @@
       - Dendrogramme / Heatmaps (clustering nach Zelltypen)
       - Vergleich ATAC vs. RNA (z. B. UMAP / PCA)
 
+    Done
+
     ii. Can one cluster genes based on their expression profiles?
         a. Can you determine a specific set of genes for your cell lineage?
             Daten:
@@ -122,6 +124,8 @@
             Plot:
                 - Heatmap mit hervorgehobenen Subclustern
                 - Boxplots: Expression in Subclustern
+
+    Done
 
     iii. Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
 
