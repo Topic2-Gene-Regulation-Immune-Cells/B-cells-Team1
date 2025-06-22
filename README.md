@@ -13,6 +13,8 @@ conda activate envBCells1
 
 ## 1. i
 
+![ATAC Stats vs QC](figures/ATAC_Stats_vs_QC.png)
+
 ### mean ATAC peaks colored by lineage
 
 ![mean ATAC peaks](figures/mean_ATAC_peaks.png)
