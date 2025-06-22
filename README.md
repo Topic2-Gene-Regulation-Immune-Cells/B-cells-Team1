@@ -43,6 +43,10 @@ conda activate envBCells1
 
 ![UMAP Overlap of clusters and lineage](figures/UMAP_clusters_lineage.png)
 
+### Correlation of Peak-Clusters and cell types 
+
+! [Correlation of clusters and cell types](figures/Correlation_Peak-Clusters_CellTypes.png)
+
 ## 1. iv
 
 ### Cre cluster activity per lineage
