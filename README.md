@@ -45,7 +45,7 @@ conda activate envBCells1
 
 ### Correlation of Peak-Clusters and cell types 
 
-! [Correlation of clusters and cell types](figures/Correlation_Peak-Clusters_CellTypes.png)
+![Correlation of clusters and cell types](figures/Correlation_Peak-Clusters_CellTypes.png)
 
 ## 1. iv
 
