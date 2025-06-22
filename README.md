@@ -27,7 +27,7 @@ conda activate envBCells1
 
 ### Distribution of mean ATAC peaks
 
-![Histogramm of mean ATAC peak distribution](figures/Distribution_of_ATAC_peaks.png.png)
+![Histogramm of mean ATAC peak distribution](figures/Distribution_of_ATAC_peaks.png)
 
 ## 1. iii
 
