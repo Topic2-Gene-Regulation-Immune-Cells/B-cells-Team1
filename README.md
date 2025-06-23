@@ -31,6 +31,10 @@ conda activate envBCells1
 
 ![Histogramm of mean ATAC peak distribution](figures/Distribution_of_ATAC_peaks.png)
 
+### OCR landscape - UMAP
+
+![OCR landscape in a UMAP](figures/OCR%20landscape%20-%20UMAP.png)
+
 ## 1. iii
 
 ### PCA
@@ -52,6 +56,15 @@ conda activate envBCells1
 ### Cre cluster activity per lineage
 
 ![Heatmap of Cre cluster activity](figures/CRE_clusters.png)
+
+### Tried to cluster CREs based on Gini-index 
+
+![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
+
+### CRE-Cluster across specific cell types 
+
+![CRE-Clusters across specific cell types](figures/Cluster-specific%20CRE%20accessibility%20patterns.png)
+
 
 ## 2. i
 
