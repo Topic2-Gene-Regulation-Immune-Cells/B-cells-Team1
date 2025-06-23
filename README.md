@@ -23,7 +23,7 @@ conda activate envBCells1
 
 ### UMAP of ATAC peaks colored by lineage
 
-![UMAP of ATAC peaks](figures/UMAP_ATAC_peaks.png)
+![UMAP of ATAC peaks](figures/UMAP_ATAC.png)
 
 ## 1. ii
 
