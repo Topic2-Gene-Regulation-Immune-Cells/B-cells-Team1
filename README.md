@@ -77,6 +77,9 @@ conda activate envBCells1
 ![PCA-Plot RNA vs. ATAC](figures/PCA_RNA_vs_ATAC.png)
 
 ## 2. ii
+### Mean gene expression per cluster across lineages 
+
+![Heatmap mean gene expression and lineages](figures/Heatmap_RNAclusters_lineages.png))
 
 ### Clustering of genes by expression across all celltypes
 
