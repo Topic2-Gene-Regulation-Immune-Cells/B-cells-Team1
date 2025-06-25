@@ -65,10 +65,11 @@ conda activate envBCells1
 
 ![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
 
-### CRE-Cluster across specific cell types 
+### CRE-Cluster across lineages
 
 ![CRE-Clusters across specific cell types](figures/Cluster-specific%20CRE%20accessibility%20patterns.png)
 
+->does not make sense since i used Gini-index
 
 ## 2. i
 
