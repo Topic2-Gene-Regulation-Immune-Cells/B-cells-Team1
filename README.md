@@ -49,15 +49,17 @@ conda activate envBCells1
 
 ![UMAP Overlap of clusters and lineage](figures/UMAP_clusters_lineage.png)
 
-### Correlation of Peak-Clusters and cell types 
+### Correlation of Peak-Clusters and lineages
 
-![Correlation of clusters and cell types](figures/Correlation_Peak-Clusters_CellTypes.png)
+![Correlation of clusters and lineages](figures/Correlation_Peak-Clusters_Lineages.png)
 
 ## 1. iv
 
 ### Cre cluster activity per lineage
 
 ![Heatmap of Cre cluster activity](figures/CRE_clusters.png)
+
+-> CRE specific data or the same as plot before
 
 ### Tried to cluster CREs based on Gini-index 
 
