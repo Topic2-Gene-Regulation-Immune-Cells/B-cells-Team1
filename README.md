@@ -81,24 +81,16 @@ conda activate envBCells1
 ## 2. ii
 ### Mean gene expression per cluster across lineages 
 
-![Heatmap mean gene expression and lineages](figures/Heatmap_RNAclusters_lineages.png))
-
-### Clustering of genes by expression across all celltypes
-
-![Heatmap Geneclustering](figures/Geneclustering_by_expression.png)
-
-### Mean gene expression per cluster across cell types
-
-![Heatmap mean gene expression](figures/mean_gene_expression.png)
-
-### Distribution of gene expression by cluster in B-cells and other lineages
-
-![Boxplot B-cells vs. other cells](figures/expression_B_vs_others.png)
-
-### Gene cluster vs KMeans cluster
-
-![Heatmap Gene cluster vs. KMeans cluster](figures/Geneclusters_KMeans.png)
+![Heatmap mean gene expression and lineages](figures/Heatmap_RNAclusters_lineages.png)
 
 ### Distribution of gene expression in gene clusters across lineages
 
 ![Boxplot for expression distribution of gene clusters across lineages](figures/Distribution_geneclusters_lineages.png)
+
+### Mean gene expression per cluster across lineages
+
+![Heatmap mean gene expression](figures/Heatmap_RNAclusters_lineages_mean.png)
+
+### Distribution of gene expression in gene subclusters across lineages
+
+![Boxplot for expression distribution of gene subclusters across lineages](figures/Distribution_geneclusters_lineages_sublucters.png)
