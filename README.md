@@ -113,3 +113,12 @@ conda activate envBCells1
 ### Distribution of gene expression in gene subclusters across lineages
 
 ![Boxplot for expression distribution of gene subclusters across lineages](figures/Distribution_geneclusters_lineages_sublucters.png)
+
+## 2. iii 
+### a. regression for all celltypes 
+
+![Histogram: regression for all celltypes](figures/Histogram_regression_all_celltypes.png)
+
+### b. regression for B-Cells
+
+![Histogram: regression for B-Cells](figures/Histogram_regression_Bcells.png)
