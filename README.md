@@ -13,7 +13,9 @@ conda activate envBCells1
 
 ## 1. i
 
-![ATAC Stats vs QC](figures/ATAC_Stats_vs_QC.png)
+### a. ATAC QC vs stats
+
+![ATAC QC vs STAT](figures/heatmap_qc_vs_atac.png)
 
 ### mean ATAC peaks colored by lineage
 
@@ -28,6 +30,16 @@ conda activate envBCells1
 ![UMAP of B-cell ATAC peaks colored by accessibility](figures/UMAP_B_cells.png)
 
 ## 1. ii
+
+### a. remove peaks due to low signal 
+
+![variance per peak](figures/variance_per_peak.png)
+![mean per peak](figures/mean_per_peak.png)
+
+### b. Signals of promotors and enhancers
+
+! [Histogramm: signal vs TSS-distance](figures/mean_per_TSS_distance_hist.png)
+! [Lineplor: signal vs TSS-distance](figures/mean_per_TSS_distance.png)
 
 ### Distribution of mean ATAC peaks
 
