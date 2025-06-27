@@ -52,9 +52,9 @@ conda activate envBCells1
 ## 1. iii
 
 ### PCA
-![PCA max. peak - celltype](figures/PCA_peaks.png)
+![PCA max. peak - celltype](figures/PCA_peaks_multi_4plots.png)
 
-![PCA colored by lineage](figures/PCA_peaks_lineage.png)
+![PCA colored by lineage](figures/PCA_peaks_PC2_vs_PC4.png)
 
 ### UMAP to determine the overlap between the clusters and the true lineage
 
