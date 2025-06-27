@@ -23,12 +23,6 @@ conda activate envBCells1
 
 -> remove first cell ??
 
-### UMAP of ATAC peaks colored by lineage
-
-![UMAP of ATAC peaks](figures/UMAP_ATAC_peaks_zoomed.png)
-
-![UMAP of B-cell ATAC peaks colored by accessibility](figures/UMAP_B_cells.png)
-
 ## 1. ii
 
 ### a. remove peaks due to low signal 
@@ -58,10 +52,9 @@ conda activate envBCells1
 ## 1. iii
 
 ### PCA
+![PCA max. peak - celltype](figures/PCA_peaks.png)
 
-![PCA](figures/PCA.png)
-
-![PCA_clusters](figures/PCA_clusters.png)
+![PCA colored by lineage](figures/PCA_peaks_lineage.png)
 
 ### UMAP to determine the overlap between the clusters and the true lineage
 
