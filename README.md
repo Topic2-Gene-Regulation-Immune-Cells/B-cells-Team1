@@ -41,6 +41,12 @@ conda activate envBCells1
 ![Histogramm: signal vs TSS-distance](figures/mean_per_TSS_distance_hist.png)
 ![Lineplot: signal vs TSS-distance](figures/mean_per_TSS_distance.png)
 
+![boxplot](figures/boxplot_enhancer_vs_promotor.png)
+
+### c. correlation of peak and distance to TSS
+
+![mean ATAC-signal vs TSS-distance](figures/scatterplot_peak_vs_TSS_distance.png)
+
 ### Distribution of mean ATAC peaks
 
 ![Histogramm of mean ATAC peak distribution](figures/Distribution_of_ATAC_peaks.png)
