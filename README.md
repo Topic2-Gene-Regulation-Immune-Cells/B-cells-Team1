@@ -31,6 +31,7 @@ conda activate envBCells1
 
 ### a. remove peaks due to low signal 
 
+![Hexbin: mean vs std](figures/Hexbin_mean_vs_std.png)
 ![variance per peak](figures/variance_per_peak.png)
 ![mean per peak](figures/mean_per_peak.png)
 
