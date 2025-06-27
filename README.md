@@ -39,7 +39,7 @@ conda activate envBCells1
 ### b. Signals of promotors and enhancers
 
 ! [Histogramm: signal vs TSS-distance](figures/mean_per_TSS_distance_hist.png)
-! [Lineplor: signal vs TSS-distance](figures/mean_per_TSS_distance.png)
+! [Lineplot: signal vs TSS-distance](figures/mean_per_TSS_distance.png)
 
 ### Distribution of mean ATAC peaks
 
