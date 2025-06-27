@@ -21,6 +21,10 @@ conda activate envBCells1
 
 ![mean ATAC peaks](figures/mean_ATAC_peaks.png)
 
+### mean ATAC peaks colored by lineage with dendrogramm 
+
+![mean ATAC peaks](figures/mean_ATAC_peaks_with_dendrogramm.png)
+
 -> remove first cell ??
 
 ## 1. ii
