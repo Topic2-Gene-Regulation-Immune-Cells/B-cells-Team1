@@ -122,3 +122,14 @@ conda activate envBCells1
 ### b. regression for B-Cells
 
 ![Histogram: regression for B-Cells](figures/Histogram_regression_Bcells.png)
+![Difference of coefficients for cell-lineage-specific regression](figures/R^2_per_gene.png)
+
+### c. cell-lineage specific CREs
+
+![ATAC mean-signal for top CREs controlling B-Cell-specific genes](figures/ATAC_signal_top_CREs_Bcells.png)
+![ATAC mean-signal for all CREs controlling B-Cell-specific genes](figures/ATAC_signal_all_CREs_Bcells.png)
+
+![delta R^2 for top CREs controlling B-Cell-specific genes](figures/deltaR^2_top_CREs_Bcells.png)
+![delta R^2 for all CREs controlling B-Cell-specific genes](figures/deltaR^2_all_CREs_Bcells.png)
+
+
