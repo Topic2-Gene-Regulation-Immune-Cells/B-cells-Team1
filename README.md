@@ -134,7 +134,7 @@ conda activate envBCells1
 ### d. how do the results of R^2 and correlation differ
 
 ![R^2 vs Pearson correlation](figures/R^2_vs_pearson_correlation.png)
-!![deltaR^2 vs Pearson correlation](figures/deltaR^2_vs_pearson_correlation.png)
+![deltaR^2 vs Pearson correlation](figures/deltaR^2_vs_pearson_correlation.png)
 
 ### e. difference of activating and repressing CREs
 
