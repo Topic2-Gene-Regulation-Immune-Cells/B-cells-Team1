@@ -41,7 +41,7 @@ conda activate envBCells1
 
 ![boxplot: signal of Promotor vs Enhancer scaled](figures/Boxplot_mean_per_Promotor_vs_Enhancer_scaled.png)
 ![boxplot: signal of Promotor vs Enhancer not scaled](figures/Boxplot_mean_per_Promotor_vs_Enhancer_not_scaled.png)
-1[violinplot](figures/violinplot_mean_per_Promotor_vs_Enhancer.png)
+![violinplot](figures/violinplot_mean_per_Promotor_vs_Enhancer.png)
 
 ### c. correlation of peak and distance to TSS
 
