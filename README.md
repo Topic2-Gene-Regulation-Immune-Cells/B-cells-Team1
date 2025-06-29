@@ -36,10 +36,14 @@ conda activate envBCells1
 
 ### b. Signals of promotors and enhancers
 
-![Histogramm: signal vs TSS-distance](figures/mean_per_TSS_distance_hist.png)
-![Lineplot: signal vs TSS-distance](figures/mean_per_TSS_distance.png)
+![Histogramm: signal vs TSS-distance](figures/Histogramm_mean_per_TSS_distance.png)
+![Histogramm: signal vs TSS-distance with Annotation](figures/Histogramm_mean_per_TSS_distance_with_Annotation.png)
 
-![boxplot](figures/boxplot_enhancer_vs_promotor.png)
+![boxplot: signal of Promotor vs Enhancer scaled](figures/Boxplot_mean_per_Promotor_vs_Enhancer_scaled.png)
+![boxplot: signal of Promotor vs Enhancer not scaled](figures/Boxplot_mean_per_Promotor_vs_Enhancer_not_scaled.png)
+1[violinplot](figures/violinplot_mean_per_Promotor_vs_Enhancer.png)
+
+![scatterplot](figures/Scatterplot_mean_vs_distance_to_TSS.png)
 
 ### c. correlation of peak and distance to TSS
 
@@ -138,6 +142,7 @@ conda activate envBCells1
 
 ### e. difference of activating and repressing CREs
 
-![variance by CRE type](figures/boxplot_variance_by_CRE_type.png)
+![R^2 by CRE type](figures/boxplot_variance_by_CRE_type.png)
+![TAC mean by CRE type](figures/boxplot_ATAC_mean_by_CRE_type.png)
 
 
