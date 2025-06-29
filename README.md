@@ -37,17 +37,18 @@ conda activate envBCells1
 ### b. Signals of promotors and enhancers
 
 ![Histogramm: signal vs TSS-distance](figures/Histogramm_mean_per_TSS_distance.png)
-![Histogramm: signal vs TSS-distance with Annotation](figures/Histogramm_mean_per_TSS_distance_with_Annotation.png)
+![mean signal vs TSS-distance with Annotation](figures/MeanPeakSignal_by_TSS_Distance_per_Annotation.png)
 
 ![boxplot: signal of Promotor vs Enhancer scaled](figures/Boxplot_mean_per_Promotor_vs_Enhancer_scaled.png)
 ![boxplot: signal of Promotor vs Enhancer not scaled](figures/Boxplot_mean_per_Promotor_vs_Enhancer_not_scaled.png)
 1[violinplot](figures/violinplot_mean_per_Promotor_vs_Enhancer.png)
 
-![scatterplot](figures/Scatterplot_mean_vs_distance_to_TSS.png)
-
 ### c. correlation of peak and distance to TSS
 
 ![mean ATAC-signal vs TSS-distance](figures/scatterplot_peak_vs_TSS_distance.png)
+
+### d. intronic vs. non intronic enhancer
+![boxplot: intronic vs. non intronic](figures/Boxplot_intronic_vs_non_intronic_enhancer.png)
 
 ### Distribution of mean ATAC peaks
 
