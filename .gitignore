@@ -12,3 +12,4 @@ data/RNA_T_Bcells.csv
 data/ATAC_scaled.ct.csv
 data/ATAC_stat_high_signal_peaks.csv
 data/ATAC_regiontype.csv
+data/ATAC_stat_high_signal_peaks_scaled.csv
