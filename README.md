@@ -96,7 +96,7 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ### Tried to link CRE-clusters and lineage based on Gini-index 
 
-![Gini plot after Lineage](figures
+![Gini plot after Lineage](figures/Top-Gini%20CRE-%20Lineage_%20UMAP.png)
 
 ## 2. i
 
