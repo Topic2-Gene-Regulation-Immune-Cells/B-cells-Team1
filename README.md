@@ -67,31 +67,36 @@ conda activate envBCells1
 
 ![PCA colored by lineage](figures/PCA_peaks_PC2_vs_PC4.png)
 
-### UMAP to determine the overlap between the clusters and the true lineage
-
-![UMAP Overlap of clusters and lineage](figures/UMAP_clusters_lineage.png)
-
-### Correlation of Peak-Clusters and lineages
-
-![Correlation of clusters and lineages](figures/Correlation_Peak-Clusters_Lineages.png)
 
 ## 1. iv
 
 ### Cre cluster activity per lineage
 
-![Heatmap of Cre cluster activity](figures/CRE_clusters.png)
+![Heatmap of Cre cluster activity](figures/Correlation_Peak-Clusters_Lineages_filtered_dataset.png)
 
--> CRE specific data or the same as plot before
+### Visualization of clustered regions
+
+![Signal trend across cell types](figures/Line_plot_of_clustered_regions.png)
+
+### Define cell lineage-specific CRE clusters
+
+![Comparing B-cell signal to others](figures/B-cell_mean_signal_vs_otther_lineages.png)
+
+B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ### Tried to cluster CREs based on Gini-index 
 
 ![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
 
-### CRE-Cluster across lineages
+### CRE-Cluster across lineages based on top 20% Gini-number
 
 ![CRE-Clusters across specific cell types](figures/Cluster-specific%20CRE%20accessibility%20patterns.png)
 
-->does not make sense since i used Gini-index
+->does not make sense since i used Gini-index??
+
+### Tried to link CRE-clusters and lineage based on Gini-index 
+
+![Gini plot after Lineage](figures
 
 ## 2. i
 
