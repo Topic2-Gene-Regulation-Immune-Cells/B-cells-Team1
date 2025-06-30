@@ -84,6 +84,12 @@ conda activate envBCells1
 
 B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
+### Relative activity per cluster by row-normalizing (z-scoring) the data
+
+![Relative activity per cluster](figures/Relative_activity_per_cluster.png)
+->Colors indicate whether the lineage is more or less active relative to that cluster’s average
+->Are there differences between these cell-lineage specific CRE clusters? When and how long are they active?  Wir das so beantwortet???
+
 ### Tried to cluster CREs based on Gini-index 
 
 ![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
