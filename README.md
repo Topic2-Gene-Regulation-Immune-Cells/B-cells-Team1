@@ -161,6 +161,14 @@ BUT es macht keinen sinn weil wir ja die UMAP anhand der CREs gemacht haben und 
 ### e. difference of activating and repressing CREs
 
 ![R^2 by CRE type](figures/boxplot_variance_by_CRE_type.png)
-![TAC mean by CRE type](figures/boxplot_ATAC_mean_by_CRE_type.png)
+![ATAC mean by CRE type](figures/comparison_of_ATAC_mean_activating_repressing_CREs.png)
+![KDE plot: ATAC mean by CRE type](figures/KDE_plot_ATAC_mean_activating_repressing_CREs.png)
+![Histogram: ATAC mean by CRE type](figures/Histogram_ATAC_mean_activating_repressing_CREs.png)
 
+### f. How many genes are mainly regulated by repressing CREs
 
+![number of genes mainly regulated by activating vs. repressing CREs](figures/number_of_genes_regulated_activating_repressing.png)
+
+### f. Can promotors act through repression 
+
+![number of activating vs. repressing Promotors](figures/number_of_promoters_activating_repressing.png)
