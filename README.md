@@ -172,3 +172,9 @@ BUT es macht keinen sinn weil wir ja die UMAP anhand der CREs gemacht haben und 
 ### f. Can promotors act through repression 
 
 ![number of activating vs. repressing Promotors](figures/number_of_promoters_activating_repressing.png)
+
+### g. Where are repressing CREs located compared to activating CREs?
+
+![location of repressing and activating CREs on chromosomes](figures/location_of_activating_repressing_CREs_chromosome.png)
+![location of repressing and activating CREs to TSS](figures/location_of_activating_repressing_CREs_TSS.png)
+![ECdF: location of repressing and activating CREs to TSS](figures/ECDF_location_of_activating_repressing_CREs_TSS.png)
