@@ -94,15 +94,21 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
 
-### CRE-Cluster across lineages based on top 20% Gini-number
+### Comparison of clustered CREs and lineages
 
-![CRE-Clusters across specific cell types](figures/Cluster-specific%20CRE%20accessibility%20patterns.png)
+![Comparison of CRE clusters and all lineages together](figures/UMAP_Gini_CREs_clusters_vs_lineages_side_by_side.png)
 
-->does not make sense since i used Gini-index??
+![Comparison of CRE clusters and lineages one by one](figures/UMAP_Gini_CREs_cluster_vs_each_lineage.png)
 
 ### Tried to link CRE-clusters and lineage based on Gini-index 
 
 ![Gini plot after Lineage](figures/Top-Gini%20CRE-%20Lineage_%20UMAP.png)
+
+BUT es macht keinen sinn weil wir ja die UMAP anhand der CREs gemacht haben und nicht anhand der lineages deswegen kann man es nicht vergleichen !
+
+### CRE-Cluster across lineages based on top 20% Gini-number
+
+![CRE-Clusters across specific cell types](figures/Cluster-specific%20CRE%20accessibility%20patterns.png)
 
 ## 2. i
 
