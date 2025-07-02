@@ -163,6 +163,10 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 ![ECdF: location of repressing and activating CREs to TSS](figures/ECDF_location_of_activating_repressing_CREs_TSS.png)
 
 ### Are there CREs that are repressing for one gene but activating for another gene?
+
+![Heatmap: CREs that are both activating and repressing](figures/Heatmap_both_activating_repressing_CREs_TSS.png)
+![Network: CREs that are both activating and repressing](figures/Network_both_activating_repressing_CREs_TSS.png)
+
 ### Does CRE clustering change if one includes the effect direction on gene expression?
 
 -------------------------------------------------------------
