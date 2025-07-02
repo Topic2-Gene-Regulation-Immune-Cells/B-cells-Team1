@@ -165,8 +165,12 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ![Heatmap: CREs that are both activating and repressing](figures/Heatmap_both_activating_repressing_CREs_TSS.png)
 ![Network: CREs that are both activating and repressing](figures/Network_both_activating_repressing_CREs_TSS.png)
+[interactive Network: CREs that are both activating and repressing](figures/CRE–Gene%20Regulatory%20Network%20(Activating%20&%20Repressing).html)
 
 ### Does CRE clustering change if one includes the effect direction on gene expression?
+
+![Clusering not including the effect direction on gene expression](figures/Clustering_CREs_non_directional.png)
+![Clusering including the effect direction on gene expression](figures/Clustering_CREs_directional.png)
 
 -------------------------------------------------------------
 
