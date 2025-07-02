@@ -55,7 +55,9 @@ conda activate envBCells1
 
 ### Can one quantify the similarity of cell types in a sorted matrix?
 
+![PCA for celltypes and clusters with k=5](figures/PCA_k5_ct_clusters.png)
 
+![OCR landscape in a UMAP](figures/OCR%20landscape%20-%20UMAP.png)
 
 ## Can one define different classes of peaks based on the signal and the signal variation across cells?
 
