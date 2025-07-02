@@ -69,6 +69,10 @@ conda activate envBCells1
 
 ![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
 
+![Gini CRE-Cluster Heatmap](figures/Cluster-specific%20CRE%20accessibility%20patterns.png)
+
+-> hat nur 20% top peaks über Gini index ist es besser als andere Heatmap?
+
 ### Can one visualize the behaviour of clustered regions?
 
 ![Signal trend across cell types](figures/Line_plot_of_clustered_regions.png)
@@ -79,11 +83,20 @@ conda activate envBCells1
 
 B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
+### ODER
+
+![Kmeans Bcell specific with 6 clusters](figures/Kmeans_Bcells_6.png)
+
 ### Are there differences between the B-cell CRE clusters? When and how long are they active?
 
 ![Relative activity per cluster](figures/Relative_activity_per_cluster.png)
 ->Colors indicate whether the lineage is more or less active relative to that cluster’s average
 ->Wir das so beantwortet???
+
+### ODER
+
+![Signal trend across Bcells](figures/Line_plot_of_clustered_regions_Bcells.png)
+->ATAC-signal means ist verschieden
 
 
 ## Does clustering of the gene expression matrix show the same relationships between cell types as the ATAC-seq data?
