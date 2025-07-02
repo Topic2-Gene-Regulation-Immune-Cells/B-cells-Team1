@@ -43,14 +43,19 @@ conda activate envBCells1
 
 ## Do related cell types cluster together based on their ATAC signal?
 
-![mean ATAC peaks](figures/mean_ATAC_peaks_with_dendrogramm.png)
-
 ![PCA max. peak - celltype](figures/PCA_peaks_multi.png)
 
 ![PCA max. peak - celltype_ PC4](figures/PCA_peaks_multi_2.png)
 
 ### Does the clustering reproduce known relationship between cells?
+
+![Comparison of CRE clusters and all lineages together](figures/UMAP_Gini_CREs_clusters_vs_lineages_side_by_side.png)
+
+![Comparison of CRE clusters and lineages one by one](figures/UMAP_Gini_CREs_cluster_vs_each_lineage.png)
+
 ### Can one quantify the similarity of cell types in a sorted matrix?
+
+
 
 ## Can one define different classes of peaks based on the signal and the signal variation across cells?
 
@@ -78,12 +83,6 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 ->Colors indicate whether the lineage is more or less active relative to that cluster’s average
 ->Wir das so beantwortet???
 
-#### eigene Frage: Comparison of clustered CREs and lineages
-
-![Comparison of CRE clusters and all lineages together](figures/UMAP_Gini_CREs_clusters_vs_lineages_side_by_side.png)
-
-![Comparison of CRE clusters and lineages one by one](figures/UMAP_Gini_CREs_cluster_vs_each_lineage.png)
-
 
 ## Does clustering of the gene expression matrix show the same relationships between cell types as the ATAC-seq data?
 ![RNA vs ATAC dendrogramm 10 Cluster](figures/dendrogram_RNA_ATAC_10_clusters.png)
@@ -98,11 +97,11 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ### Can your determine a specific set of genes for B-cells?
 
-![Top B-cell specific genese](figures/ATAC_signal_top_CREs_Bcells.png)
-
 ![All B-cell specific genese](figures/ATAC_signal_all_CREs_Bcells.png)
 
 ### Are there subclusters of special interest?
+
+![Boxplot for expression distribution of gene subclusters across lineages](figures/Distribution_geneclusters_lineages_sublucters.png)
  
 ## Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
 ### Where are associated CREs located with respect to the TSS?
@@ -126,10 +125,8 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ### Which CREs control B-cell genes?
 
-![ATAC mean-signal for top CREs controlling B-Cell-specific genes](figures/ATAC_signal_top_CREs_Bcells.png)
 ![ATAC mean-signal for all CREs controlling B-Cell-specific genes](figures/ATAC_signal_all_CREs_Bcells.png)
 
-![delta R^2 for top CREs controlling B-Cell-specific genes](figures/deltaR^2_top_CREs_Bcells.png)
 ![delta R^2 for all CREs controlling B-Cell-specific genes](figures/deltaR^2_all_CREs_Bcells.png)
 
 ### How do the results of this analysis differ from pure association via correlation?
@@ -151,6 +148,8 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 ### How many genes are mainly regulated by a repressing CREs, and can promoters act through repression?
 
 ![number of genes mainly regulated by activating vs. repressing CREs](figures/number_of_genes_regulated_activating_repressing.png)
+
+### Can promoters act through repression?
 
 ![number of activating vs. repressing Promotors](figures/number_of_promoters_activating_repressing.png)
 
