@@ -76,7 +76,7 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ![Relative activity per cluster](figures/Relative_activity_per_cluster.png)
 ->Colors indicate whether the lineage is more or less active relative to that cluster’s average
-->Are there differences between these cell-lineage specific CRE clusters? When and how long are they active?  Wir das so beantwortet???
+->Wir das so beantwortet???
 
 #### eigene Frage: Comparison of clustered CREs and lineages
 
@@ -90,9 +90,18 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ## Can one cluster genes based on their expression profiles?
 
-![Heatmap mean gene expression and lineages](figures/Heatmap_RNAclusters_lineages.png)
+![Heatmap gene expression and lineages](figures/Heatmap_RNAclusters_lineages.png)
+
+![Heatmap mean gene expression and lineages](figures/Heatmap_RNAclusters_lineages_mean.png)
+
+->welches der beiden ist besser??
 
 ### Can your determine a specific set of genes for B-cells?
+
+![Top B-cell specific genese](figures/ATAC_signal_top_CREs_Bcells.png)
+
+![All B-cell specific genese](figures/ATAC_signal_all_CREs_Bcells.png)
+
 ### Are there subclusters of special interest?
  
 ## Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
