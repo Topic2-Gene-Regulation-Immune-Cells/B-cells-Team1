@@ -49,9 +49,13 @@ conda activate envBCells1
 
 ### Does the clustering reproduce known relationship between cells?
 
-![Comparison of CRE clusters and all lineages together](figures/UMAP_Gini_CREs_clusters_vs_lineages_side_by_side.png)
+![Comparison of CRE clusters and all lineages together, top 20%](figures/UMAP_Gini_CREs_clusters_vs_lineages_side_by_side.png)
 
-![Comparison of CRE clusters and lineages one by one](figures/UMAP_Gini_CREs_cluster_vs_each_lineage.png)
+![Comparison of CRE clusters and all lineages together, top 5%](figures/UMAP_Gini_CREs_clusters_vs_lineages_top5percent.png)
+
+![Comparison of CRE clusters and lineages one by one, top 20%](figures/UMAP_Gini_CREs_cluster_vs_each_lineage.png)
+
+![Comparison of CRE clusters and lineages one by one, top 2,5%](figures/UMAP_Gini_CREs_cluster_vs_each_lineage_top2,5percent.png)
 
 ### Can one quantify the similarity of cell types in a sorted matrix?
 
@@ -110,6 +114,9 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ->welches der beiden ist besser??
 
+![Kmeans RNA with 9 clusters](figures/KMeans_RNA_9.png)
+-> Clustered genes based on their expression level over the cell types
+
 ### Can your determine a specific set of genes for B-cells?
 
 ![All B-cell specific genese](figures/ATAC_signal_all_CREs_Bcells.png)
@@ -117,6 +124,12 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 ### Are there subclusters of special interest?
 
 ![Boxplot for expression distribution of gene subclusters across lineages](figures/Distribution_geneclusters_lineages_sublucters.png)
+
+![Heatmap Subcluster of genes - Accessibility](figures/Heatmap_Subcluster_Bcells_Accessibility.png)
+
+![Line plot Subcluster of genes - Accessibility](figures/Lineplot_Subcluster_Bcells_Accessibility.png)
+
+![Hierarchical clustering of genes](figures/Hierarchical_Clustering_Subcluster_Bcells_Accessibility.png)
  
 ## Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
 ### Where are associated CREs located with respect to the TSS?
