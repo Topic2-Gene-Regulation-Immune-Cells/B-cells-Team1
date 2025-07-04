@@ -141,7 +141,11 @@ Cluster 1 mit höchster mean accessibility entsprichte den Top B-cell-specific g
 ![Hierarchical clustering of genes](figures/Hierarchical_Clustering_Subcluster_Bcells_Accessibility.png)
  
 ## Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
+![Histogram CRE-TSS distance](figures/Systematically%20Associated%20CRE-TSS%20distance.png)
+
 ### Where are associated CREs located with respect to the TSS?
+![Donutplot of CRE Distribution](figures/CRE%20Feature%20Distribution.png)
+
 ### Where are the most associated CREs located?
 ### How many CREs are associated with genes?
 ### Is every promoter associated with a gene?
