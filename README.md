@@ -123,11 +123,13 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ### Are there subclusters of special interest?
 
-![Boxplot for expression distribution of gene subclusters across lineages](figures/Distribution_geneclusters_lineages_sublucters.png)
-
 ![Heatmap Subcluster of genes - Accessibility](figures/Heatmap_Subcluster_Bcells_Accessibility.png)
 
 ![Line plot Subcluster of genes - Accessibility](figures/Lineplot_Subcluster_Bcells_Accessibility.png)
+
+Cluster 1 mit höchster mean accessibility entsprichte den Top B-cell-specific genes:
+
+![Top B-cell specific genese](figures/ATAC_signal_top_CREs_Bcells.png)
 
 ![Hierarchical clustering of genes](figures/Hierarchical_Clustering_Subcluster_Bcells_Accessibility.png)
  
