@@ -201,6 +201,7 @@ Cluster 1 mit höchster mean accessibility entsprichte den Top B-cell-specific g
 
 ![Clusering not including the effect direction on gene expression](figures/Clustering_CREs_non_directional.png)
 ![Clusering including the effect direction on gene expression](figures/Clustering_CREs_directional.png)
+![Comparision of Clustering](figures/Cluster_Overlap_Heatmap.png)
 
 -------------------------------------------------------------
 
