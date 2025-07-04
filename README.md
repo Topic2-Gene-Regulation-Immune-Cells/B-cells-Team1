@@ -106,6 +106,13 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 ## Does clustering of the gene expression matrix show the same relationships between cell types as the ATAC-seq data?
 ![RNA vs ATAC dendrogramm 10 Cluster](figures/dendrogram_RNA_ATAC_10_clusters.png)
 
+Adjusted Rand Index: 0.534
+Fowlkes-Mallows Index: 0.592
+Cophenetic distance correlation: r = 0.090, p = 0.0000
+
+![confusion matrix heatmap](figures/Cluster_Overlap_Heatmap_RNA_ATAC.png)
+
+
 ## Can one cluster genes based on their expression profiles?
 
 ![Heatmap gene expression and lineages](figures/Heatmap_RNAclusters_lineages.png)
