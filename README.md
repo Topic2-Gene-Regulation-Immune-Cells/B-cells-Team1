@@ -48,6 +48,8 @@ conda activate envBCells1
 
 ### Does the clustering reproduce known relationship between cells?
 
+![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
+
 ![Comparison of CRE clusters and lineages one by one, top 2,5%](figures/UMAP_Gini_CREs_cluster_vs_each_lineage_top2,5percent.png)
 
 - Dendrogramm um Verwandheit zu zeigen
@@ -64,8 +66,6 @@ conda activate envBCells1
 ### Cre cluster activity per lineage
 
 ### Can one cluster CREs based on their ATAC-signal?
-
-![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
 
 ![Gini CRE-Cluster Heatmap](figures/Cluster-specific%20CRE%20accessibility%20patterns.png)
 
