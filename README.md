@@ -53,6 +53,8 @@ A two-sample t-test comparing Promoter and Enhancer regions showed a highly sign
 
 - Dendrogramm um Verwandheit zu zeigen
 
+The UMAP on the left shows CREs colored by their KMeans cluster assignment, while the 10 UMAPs on the right display CREs associated with each of the 10 analyzed lineages. However, the KMeans clustering does not accurately capture known relationships between lineages, as most lineage-specific CREs — including those from B cells — are dispersed throughout the entire UMAP space.
+
 ### Can one quantify the similarity of cell types in a sorted matrix?
 
 ![PCA for celltypes and clusters with k=5](figures/PCA_k5_ct_clusters.png)
