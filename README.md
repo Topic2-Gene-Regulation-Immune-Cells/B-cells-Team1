@@ -48,8 +48,6 @@ conda activate envBCells1
 
 ### Does the clustering reproduce known relationship between cells?
 
-![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
-
 ![Comparison of CRE clusters and lineages one by one, top 2,5%](figures/UMAP_Gini_CREs_cluster_vs_each_lineage_top2,5percent.png)
 
 - Dendrogramm um Verwandheit zu zeigen
@@ -63,13 +61,12 @@ conda activate envBCells1
 
 ## Can one define different classes of peaks based on the signal and the signal variation across cells?
 
-### Cre cluster activity per lineage
-
 ### Can one cluster CREs based on their ATAC-signal?
+
+![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
 
 ![Gini CRE-Cluster Heatmap](figures/Cluster-specific%20CRE%20accessibility%20patterns.png)
 
--> hat nur 20% top peaks über Gini index ist es besser als andere Heatmap?
 
 ### Can one visualize the behaviour of clustered regions?
 
@@ -84,7 +81,7 @@ B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
 
 ### ODER
 
-![Kmeans Bcell specific with 6 clusters](figures/Kmeans_Bcells_6.png)
+![Kmeans Bcell specific with 6 clusters](figures/Kmeans_Bcells_8.png)
 
 ### Are there differences between the B-cell CRE clusters? When and how long are they active?
 
