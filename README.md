@@ -73,20 +73,10 @@ conda activate envBCells1
 ![Signal trend across cell types](figures/Line_plot_of_clustered_regions.png)
 
 ### Can one define B-cell specific CRE clusters?
-Cluster 6 - B-Zell Spezifisch
-
-![Comparing B-cell signal to others](figures/B-cell_mean_signal_vs_otther_lineages.png)
-
-B-lineage-specific clusters with mean log2FC > 0.85: [4, 8, 9]
-
-### ODER
-
-![Kmeans Bcell specific with 6 clusters](figures/Kmeans_Bcells_8.png)
+As shown in the heatmap in the heatmap of iv. a), only cluster 6 is B cell-specific, as the mean accessibility is high exclusively in B cells. Cluster 9 does not show lineage specificity but B cells, gdT cells, and myeloid cells all exhibit similarly high mean accessibility.
 
 ### Are there differences between the B-cell CRE clusters? When and how long are they active?
-
-![Relative activity per cluster](figures/Relative_activity_per_cluster.png)
-->Colors indicate whether the lineage is more or less active relative to that cluster’s average
+The UMAP of iii. a) shows that cluster 6 is overlapping in B-cells and Stem&Prog-cells. HELP wie soll man das formulieren?
 
 
 ## Does clustering of the gene expression matrix show the same relationships between cell types as the ATAC-seq data?
