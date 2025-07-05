@@ -66,11 +66,13 @@ conda activate envBCells1
 ![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
 
 ![Gini CRE-Cluster Heatmap](figures/Cluster-specific%20CRE%20accessibility%20patterns.png)
+CREs can be clustered based on their ATAC signal. Clustering into 10 groups yields a clear structure, which supports our initial hypothesis, as we are analyzing 10 distinct lineages.
 
 
 ### Can one visualize the behaviour of clustered regions?
 
 ![Signal trend across cell types](figures/Line_plot_of_clustered_regions.png)
+Here you can see the average ATAC signal for each cluster, aggregated across all cell types. The clusters clearly differ in their "Mean ATAC singal" ranges.
 
 ### Can one define B-cell specific CRE clusters?
 As shown in the heatmap in the heatmap of iv. a), only cluster 6 is B cell-specific, as the mean accessibility is high exclusively in B cells. Cluster 9 does not show lineage specificity but B cells, gdT cells, and myeloid cells all exhibit similarly high mean accessibility.
@@ -94,18 +96,13 @@ Cophenetic distance correlation: r = 0.090, p = 0.0000
 
 ## Can one cluster genes based on their expression profiles?
 
-![Heatmap gene expression and lineages](figures/Heatmap_RNAclusters_lineages.png)
-
-- eher raus - Gene filtern
-
 ![Heatmap mean gene expression and lineages](figures/Heatmap_RNAclusters_lineages_mean.png)
-
-![Kmeans RNA with 9 clusters](figures/KMeans_RNA_9.png)
--> Clustered genes based on their expression level over the cell types
+Clustering genes based on their expression levels using KMeans does not yield meaningful results. There are no clearly defined lineages within the clusters — genes are either expressed across all lineages or not at all. Expression patterns remain nearly identical between lineages within each cluster.
 
 ### Can your determine a specific set of genes for B-cells?
 
 ![All B-cell specific genese](figures/ATAC_signal_all_CREs_Bcells.png)
+
 
 ### Are there subclusters of special interest?
 
@@ -116,8 +113,6 @@ Cophenetic distance correlation: r = 0.090, p = 0.0000
 Cluster 1 mit höchster mean accessibility entsprichte den Top B-cell-specific genes:
 
 ![Top B-cell specific genese](figures/ATAC_signal_top_CREs_Bcells.png)
-
-![Hierarchical clustering of genes](figures/Hierarchical_Clustering_Subcluster_Bcells_Accessibility.png)
  
 ## Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
 ![Histogram CRE-TSS distance](figures/Systematically%20Associated%20CRE-TSS%20distance.png)
