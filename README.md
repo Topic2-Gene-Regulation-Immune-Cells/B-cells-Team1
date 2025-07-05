@@ -15,6 +15,8 @@ conda activate envBCells1
 
 ### Is the signal (median, mean, std) dependent on the sequencing depth, number of input cells, or another QC metric?
 ![ATAC QC vs STAT](figures/heatmap_qc_vs_atac.png)
+This heatmap shows the correlation between ATAC statistics and the QC-metric. The signal shows the strongest dependence on InputCellNumber, with correlation coefficients of 0.67 (mean), 0.6 (std), and 0.47 (median). The other OC metrics show only weak correlations. This means that signal strength is most strongly associated with the number of input cells. 
+
 ### Should some cell types be removed from downstream analysis, or should we apply additional normalization?
 
 ![mean ATAC peaks](figures/mean_ATAC_peaks_with_dendrogramm.png)
@@ -23,26 +25,25 @@ conda activate envBCells1
 ## How variable is the chromatin signal for CREs across cells?
 ### Should some peaks be removed for downstream analysis due to lack of signal?
 ![Hexbin: mean vs std](figures/Hexbin_mean_vs_std.png)
+Different Hexbin Plots were used to determine peaks that should be removed (peaks with low mean, std, var). The red box shows the peaks that were removed our of the data set due to lack of signal. 
 
 ### Do promoters exibit specific signals that make them differ from enhancers?
 
-![mean signal vs TSS-distance with Annotation](figures/MeanPeakSignal_by_TSS_Distance_per_Annotation.png)
--> 300 bp um peak bei promotor zusehen bzw. nach peaks und dann Promoterregion markieren "cut-off threshold"
+![Lineplot: mean signal vs TSS-distance](figures/Lineplot_mean_signal_TSS_distance.png)
+This plot shows how the mean ATAC-signal depends on the distance to the TSS. The red box shows the peaks that are are labeles as promoters while the other ones are labeled as enhancers. The plot shows that promoters exhibit a lower ATAC-mean-signal than enhancers which means the chromatin in promoters is more closed than in enhancers. 
 
-![boxplot: signal of Promotor vs Enhancer scaled](figures/Boxplot_mean_per_Promotor_vs_Enhancer_scaled.png)
-- sternchen für signifikanz  - t-test * ** ***
+![boxplot: signal of Promotor vs Enhancer scaled](figures/Boxplot_mean_per_Promotor_vs_Enhancer_not_scaled.png)
+A two-sample t-test comparing Promoter and Enhancer regions showed a highly significant difference in mean ATAC signal (T = –34.13, p = 1.05 × 10⁻²³⁹). This result suggest a strong distinction between the ATAC mean signal of the two region types. 
 
 ### Is there a relationship between the signal and the distance to the TSS?
 
 ![mean ATAC-signal vs TSS-distance](figures/scatterplot_peak_vs_TSS_distance.png)
-
-- line fitten, subset mit highly variable peaks
+The Pearson correlation analysis gave the values: r = -0.004, p = 9.23e-03
 
 ### Are intronic enhancers different from enhancers outside the transcript.
 
 ![boxplot: intronic vs. non intronic](figures/Boxplot_intronic_vs_non_intronic_enhancer.png)
-
-- t-test
+A two-sample t-test comparing Promoter and Enhancer regions showed a highly significant difference in mean ATAC signal (T = T-statistic: 69.853, p = 0.000e+00). These values show a strong distinction between the ATAC mean signal of the two region types.
 
 ## Do related cell types cluster together based on their ATAC signal?
 
