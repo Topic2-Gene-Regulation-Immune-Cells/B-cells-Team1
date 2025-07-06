@@ -1,15 +1,27 @@
 # B-cells-Team-1
 
-Heibox with tables converted to csv-format: 
+## Project overview
+Differential gene expression and chromatin accessibility jointly define cell identity. By integrating ATAC-seq (chromatin accessibility) with RNA-seq (gene expression), we reconstruct cis-regulatory networks and quantify how promoters and enhancers drive transcription during immune differentiation.
+B lymphocytes (B cells), key effectors of adaptive immunity, arise from hematopoietic stem cells in the bone marrow and traverse a well-defined developmental cascade: 
+**pro-B → pre-B → immature/transitional B → naïve follicular B → germinal-center B → memory B → plasma cell**. 
+Each stage is governed by a distinct constellation of transcription factors and epigenetic modifications, creating unique accessibility and expression signatures that underpin B-cell specification, activation, and long-term immunity.
 
-https://heibox.uni-heidelberg.de/d/8eb927e475024eb3ae66/
+## Data & Recources
+Our coverted tables in csv-format can be found in this Heibox link: https://heibox.uni-heidelberg.de/d/8eb927e475024eb3ae66/
+They can also be accesed in '/data':
+- '1.ATAC-Seq data.CSV'
+- '2.RNA-Seq data.CSV'
+- 'ATAC_QCmatric.CSV'
+- 'ATAC_QCmatric_ReadStatistics.CSV'
 
-To implement the collective virtual environment: 
+## Overview of our analytical workflow
+- **Exploratory Data Analysis**: Correlation heatmaps, distribution plots, outlier detection
+- **Dimensionality Reduction and Clustering**: using K-means and hierarchcal clustering of CREs and genes as well as t-SNE/PCA on ATAC and RNA matrices
+- **Differentioal and Variance Components analysis**: determining promotor and enhancer regulation
+- **Cis-regulatory Mapping**: correlating OCR accesibility with nearby gene expression
+- **linear Regression**: lineage specific modeling
 
-cd *project directory*\
-conda env create -f environment.yml\
-conda activate envBCells1
-
+## Results
 
 ## How variable is the chromatin signal within cells?
 
@@ -209,3 +221,8 @@ We already generated a list of genes with high chromatin accessibility in B cell
 
 ![Top B-cell specific genese](figures/ATAC_signal_top_CREs_Bcells.png)
 Clustering of B cell–specific genes based on their chromatin accessibility revealed three distinct clusters. While the clusters are not clearly separable across all cell types, the mean accessibility profiles allow for a clearer distinction. Cluster 1 contains genes with the highest mean ATAC accessibility. Notably, this cluster shows a strong overlap with the top B cell–specific genes identified based on high ΔR² values, indicating that chromatin accessibility explains gene expression particularly well in B cells. This suggests that genes with both high overall accessibility and strong B cell–specific regulation tend to cluster together.
+
+## Team 
+Group 1 (B cells): Liska Großmann, Celine Krogmann, Annalena Kotz, Lilli Schmitt
+Supervisor: Dr. Alexander Sasse
+Tutor: Aidana Smugalova
