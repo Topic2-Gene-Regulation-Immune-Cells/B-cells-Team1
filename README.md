@@ -134,55 +134,77 @@ Cluster 1 mit höchster mean accessibility entsprichte den Top B-cell-specific g
 ### How much of the variance of gene expression can be explained for each gene with this approach?
 
 ![Histogram: regression for all celltypes](figures/Histogram_regression_all_celltypes.png)
+This shows how well the ATAC signal explains the RNA signal for all celltypes. For most genes (R² ≈ 0) the  ATAC data explains almost none of their expression levels across cell types. But for the genes with a higher R², the chromatin accessibility seems to have a stronger predictive value.
+
 
 ### How do the coefficients differ when it is performed on B-cells alone?
 
 ![Histogram: regression for B-Cells](figures/Histogram_regression_Bcells.png)
+This shows how well the ATAC signal explains the RNA signal only for the B-Cells. When regression is performed on B-Cells alone, more coefficients are higher. This indicates, that for B-Cell-specific regression, the chromatin accessibility has a stronger predictive value than for regression over all celltypes. 
 
 ![Difference of coefficients for cell-lineage-specific regression](figures/R^2_per_gene.png)
+This result can also be seen in this scatter plot. The mean ΔR² (B-cell - all celtype) of 0.0453 indicates that the chromatin accessibility in B-cells explains gene expression better than the global model across all cell types. This suggests that the gene regulation via chromatin structure is (partly) B-cell-specific and that there are lineage-restricted regulatory mechanisms.
 
 ### Which CREs control B-cell genes?
 
 ![ATAC mean-signal for all CREs controlling B-Cell-specific genes](figures/ATAC_signal_all_CREs_Bcells.png)
+This plot shows the ATAC-signal of the genes that have a high ΔR² which means the chromatin accesibility explains the gen expression in B-Cells better than across all celltypes. These genes were labeled as B-Cell-specific genes. 
 
 ![delta R^2 for all CREs controlling B-Cell-specific genes](figures/deltaR^2_all_CREs_Bcells.png)
+The ΔR²-values of these B-Cell-specific genes can be seen in this plot.
+
+To determine the CREs that control B-Cell-specific genes the peaks associated with these B-Cell-specific genes were identified. The 1845 B-Cell-specific genes can be seen in the dataframe: CREs_for_BCell_specific_genes
 
 ### How do the results of this analysis differ from pure association via correlation?
 
 ![R^2 vs Pearson correlation](figures/R^2_vs_pearson_correlation.png)
+This plot shows the relationship between the R²-values and the correlation. The correlation only measures if there is a relationship between ATAC-signal and RNA-signal, not the direction. R² reflects how well a linear model explains gene expression from accessibility. The plot shows that genes with low correlation (low relationship in general) also have low R²-values (chromatin-accesibility does not explain genexpression well). If the correlation is higher (negative or positive) the R²-values are higher, which means that if there is a stronger relationship in general between ATAC-signal and RNA-signal, the chromatin-accesibility (ATAC-signal) explains the genexpression (RNA-signal) better. 
+So this plot shows that the results of the analysis via regression and via correlation do not differ. The regression just gives even more information (about the diretion) than the correlation.
 
 ![deltaR^2 vs Pearson correlation](figures/deltaR^2_vs_pearson_correlation.png)
+This plot also consideres the cell-type-specific effects by showing the relationship between the ΔR²-values and the correlation. Again it shows that the results of the analysis via regression and via correlation do not differ.
 
 ### Are there differences between activating and repressing CREs?
 
 ![R^2 by CRE type](figures/boxplot_variance_by_CRE_type.png)
+This boxplot shows the R² of activating and repressing CREs in B-Cells. A two-sample t-test showed no statistically significant difference between the two groups (T = –1.64, p = 0.11). This means that for neither activating or repressing CREs the chromatin-accesibility explains the genexpression more than for the other group.
 
 ![ATAC mean by CRE type](figures/comparison_of_ATAC_mean_activating_repressing_CREs.png)
+This plot compares the ATAC-mean-signals od repression and activating CREs. A two-sample t-test revealed a statistically significant difference between the two groups (T = –3.36, p < 0.001), indicating a strong difference in their means. It indicates that for activating CREs the chromatin-accesibility is lower than for repressing CREs. 
 
 ![KDE plot: ATAC mean by CRE type](figures/KDE_plot_ATAC_mean_activating_repressing_CREs.png)
+This plot also shows the ATAC-mean-signal for activating and repressing CREs. It shows the same results, that the chromatin-accesibility for repressing CREs is higher than for activating CREs. 
 
 ### How many genes are mainly regulated by a repressing CREs, and can promoters act through repression?
 
 ![number of genes mainly regulated by activating vs. repressing CREs](figures/number_of_genes_regulated_activating_repressing.png)
+This plot shows how many genes are mainly regulated by repressing CREs and which by activating CREs. 
 
 ### Can promoters act through repression?
 
 ![number of activating vs. repressing Promotors](figures/number_of_promoters_activating_repressing.png)
+This plot shows that promoters mainly act activating but still can act through repression (small part).
 
 ### Where are repressing CREs located compared to activating CREs?
 
 ![location of repressing and activating CREs on chromosomes](figures/location_of_activating_repressing_CREs_chromosome.png)
+This plots shows the location of repressing and activating CREs on the different chromosomes. It shows now significant trend although it indicates that on chromosome 19 and 4 there are only activating CREs, while an chromosome 9 there are only repressing CREs. 
 
 ![location of repressing and activating CREs to TSS](figures/location_of_activating_repressing_CREs_TSS.png)
+The KDE plot considers the location of repressing and activating CREs regarding the distance to the TSS. It shows that repressing CREs are a bit closer to the TSS than activating CREs.
+
 
 ### Are there CREs that are repressing for one gene but activating for another gene?
 
 ![Heatmap: CREs that are both activating and repressing](figures/Heatmap_both_activating_repressing_CREs_TSS.png)
+This heatmap shows Cres that are both activating (red) for one gene but repressing (blue) for another gene. 
+
 ![Network: CREs that are both activating and repressing](figures/Network_both_activating_repressing_CREs_TSS.png)
-This is a picture of an interactive network that can be analysed in the notebook (RNA_seq.ipynb)
+This is a picture of an interactive network that can be looked at in the notebook (RNA_seq.ipynb). The network shows the connection of the CREs and the associated genes (green lines indicate an activating relationship and red lines a repressing).
 
 ### Does CRE clustering change if one includes the effect direction on gene expression?
 
 ![Clusering not including the effect direction on gene expression](figures/Clustering_CREs_non_directional.png)
 ![Clusering including the effect direction on gene expression](figures/Clustering_CREs_directional.png)
 ![Comparision of Clustering](figures/Cluster_Overlap_Heatmap.png)
+This plot shows that the clustering is dependend on the effect direction of gene expression. The same result is obtained by the Adjusted Rand Index with a value of 0.354.
