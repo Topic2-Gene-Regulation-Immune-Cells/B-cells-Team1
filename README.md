@@ -119,10 +119,21 @@ Cophenetic distance correlation: r = 0.090, p = 0.0000
 ![Donutplot of CRE Distribution](figures/CRE%20Feature%20Distribution.png)
 
 ### Where are the most associated CREs located?
+tba
+
 ### How many CREs are associated with genes?
+![Histogram associated vs orphan CREs](figures/CREs%20within%20100%20kb%20of%20a%20gene%20vs.%20orphan%20CREs.png)
+
+
 ### Is every promoter associated with a gene?
+63 of 32241 Promotors are not associated with a gene, see also figure 'figure/Distribution of gene‐counts per promoter'
+
 ### Are some promoters associated with other genes?
+![Histogram gene counts per promotor](figures/Distribution%20of%20gene‐counts%20per%20promoter.png)
+
+
 ### What is the closest associated CRE to a gene?
+
 ### Are there CREs that control several genes?
 
 ## Can one use regression to associate CREs with gene expression?
