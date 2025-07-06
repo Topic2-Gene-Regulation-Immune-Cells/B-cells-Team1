@@ -97,25 +97,6 @@ Cophenetic distance correlation: r = 0.090, p = 0.0000
 ![confusion matrix heatmap](figures/Cluster_Overlap_Heatmap_RNA_ATAC.png)
 
 
-## Can one cluster genes based on their expression profiles?
-
-![Heatmap mean gene expression and lineages](figures/Heatmap_RNAclusters_lineages_mean.png)
-Clustering genes based on their expression levels using KMeans does not yield meaningful results. There are no clearly defined lineages within the clusters — genes are either expressed across all lineages or not at all. Expression patterns remain nearly identical between lineages within each cluster.
-
-### Can your determine a specific set of genes for B-cells?
-
-![All B-cell specific genese](figures/ATAC_signal_all_CREs_Bcells.png)
-
-
-### Are there subclusters of special interest?
-
-![Heatmap Subcluster of genes - Accessibility](figures/Heatmap_Subcluster_Bcells_Accessibility.png)
-
-![Line plot Subcluster of genes - Accessibility](figures/Lineplot_Subcluster_Bcells_Accessibility.png)
-
-Cluster 1 mit höchster mean accessibility entsprichte den Top B-cell-specific genes:
-
-![Top B-cell specific genese](figures/ATAC_signal_top_CREs_Bcells.png)
  
 ## Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
 ![Histogram CRE-TSS distance](figures/Systematically%20Associated%20CRE-TSS%20distance.png)
@@ -208,3 +189,23 @@ This is a picture of an interactive network that can be looked at in the noteboo
 ![Clusering including the effect direction on gene expression](figures/Clustering_CREs_directional.png)
 ![Comparision of Clustering](figures/Cluster_Overlap_Heatmap.png)
 This plot shows that the clustering is dependend on the effect direction of gene expression. The same result is obtained by the Adjusted Rand Index with a value of 0.354.
+
+## Can one cluster genes based on their expression profiles?
+
+![Heatmap mean gene expression and lineages](figures/Heatmap_RNAclusters_lineages_mean.png)
+Clustering genes based on their expression levels using KMeans does not yield meaningful results. There are no clearly defined lineages within the clusters — genes are either expressed across all lineages or not at all. Expression patterns remain nearly identical between lineages within each cluster.
+
+### Can your determine a specific set of genes for B-cells?
+
+We already generated a list of genes with high chromatin accessibility in B cells, which we labeled as B cell–specific genes. These were identified based on a high ΔR², indicating that chromatin accessibility explains gene expression more strongly in B cells than across all cell types.
+![All B-cell specific genese](figures/ATAC_signal_all_CREs_Bcells.png)
+
+
+### Are there subclusters of special interest?
+
+![Heatmap Subcluster of genes - Accessibility](figures/Heatmap_Subcluster_Bcells_Accessibility.png)
+
+![Line plot Subcluster of genes - Accessibility](figures/Lineplot_Subcluster_Bcells_Accessibility.png)
+
+![Top B-cell specific genese](figures/ATAC_signal_top_CREs_Bcells.png)
+Clustering of B cell–specific genes based on their chromatin accessibility revealed three distinct clusters. While the clusters are not clearly separable across all cell types, the mean accessibility profiles allow for a clearer distinction. Cluster 1 contains genes with the highest mean ATAC accessibility. Notably, this cluster shows a strong overlap with the top B cell–specific genes identified based on high ΔR² values, indicating that chromatin accessibility explains gene expression particularly well in B cells. This suggests that genes with both high overall accessibility and strong B cell–specific regulation tend to cluster together.
