@@ -43,7 +43,7 @@ The Pearson correlation analysis gave the values: r = -0.004, p = 9.23e-03
 ### Are intronic enhancers different from enhancers outside the transcript.
 
 ![boxplot: intronic vs. non intronic](figures/Boxplot_intronic_vs_non_intronic_enhancer.png)
-A two-sample t-test comparing Promoter and Enhancer regions showed a highly significant difference in mean ATAC signal (T = T-statistic: 69.853, p = 0.000e+00). These values show a strong distinction between the ATAC mean signal of the two region types.
+A two-sample t-test comparing intonic enhancers and non-intronic enhancers showed a highly significant difference in mean ATAC signal (T = T-statistic: 69.853, p = 0.000e+00). These values show a strong distinction between the ATAC mean signal of the two region types.
 
 ## Do related cell types cluster together based on their ATAC signal?
 
