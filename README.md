@@ -226,5 +226,7 @@ Clustering of B cell–specific genes based on their chromatin accessibility rev
 
 ## Team 
 Group 1 (B cells): Liska Großmann, Celine Krogmann, Annalena Kotz, Lilli Schmitt
+
 Supervisor: Dr. Alexander Sasse
+
 Tutor: Aidana Smugalova
