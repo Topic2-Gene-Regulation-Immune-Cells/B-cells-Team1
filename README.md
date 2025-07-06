@@ -1,13 +1,16 @@
-# B-cells-Team-1
+# Uncovering CREs of B-Cells
 
 ## Project overview
 Differential gene expression and chromatin accessibility jointly define cell identity. By integrating ATAC-seq (chromatin accessibility) with RNA-seq (gene expression), we reconstruct cis-regulatory networks and quantify how promoters and enhancers drive transcription during immune differentiation.
+
 B lymphocytes (B cells), key effectors of adaptive immunity, arise from hematopoietic stem cells in the bone marrow and traverse a well-defined developmental cascade: 
 **pro-B → pre-B → immature/transitional B → naïve follicular B → germinal-center B → memory B → plasma cell**. 
+
 Each stage is governed by a distinct constellation of transcription factors and epigenetic modifications, creating unique accessibility and expression signatures that underpin B-cell specification, activation, and long-term immunity.
 
 ## Data & Recources
 Our coverted tables in csv-format can be found in this Heibox link: https://heibox.uni-heidelberg.de/d/8eb927e475024eb3ae66/
+
 They can also be accesed in '/data':
 - '1.ATAC-Seq data.CSV'
 - '2.RNA-Seq data.CSV'
@@ -21,7 +24,7 @@ They can also be accesed in '/data':
 - **Cis-regulatory Mapping**: correlating OCR accesibility with nearby gene expression
 - **linear Regression**: lineage specific modeling
 
-## Results
+## Results:
 
 ## How variable is the chromatin signal within cells?
 
@@ -32,7 +35,6 @@ This heatmap shows the correlation between ATAC statistics and the QC-metric. Th
 ### Should some cell types be removed from downstream analysis, or should we apply additional normalization?
 
 ![mean ATAC peaks](figures/mean_ATAC_peaks_with_dendrogramm.png)
-- dendrogramm?
 
 ## How variable is the chromatin signal for CREs across cells?
 ### Should some peaks be removed for downstream analysis due to lack of signal?
@@ -70,7 +72,7 @@ The UMAP on the left shows CREs colored by their KMeans cluster assignment, whil
 ### Can one quantify the similarity of cell types in a sorted matrix?
 
 ![PCA for celltypes and clusters with k=5](figures/PCA_k5_ct_clusters.png)
--> outlier wegschmeißen
+Principal Component Analysis: colored by lineage and shaped by cluster (k = 5) to quantify if clusters are celltype specific. Cluster 1 is pretty much B-Cell specific. 
 
 ![OCR landscape in a UMAP](figures/OCR%20landscape%20-%20UMAP.png)
 
