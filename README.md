@@ -114,8 +114,8 @@ To quantitatively assess the similarity between the two clusterings, we used thr
 - Fowlkes-Mallows Index (FMI): 0,726
 - Cophenetic distance correlation: r = 0,073, p = 0.0000
 
-While the ARI and FMI suggest moderate agreement, the very low cophenetic distance correlation indicates that the global structure of the dendrograms is poorly conserved between RNA and ATAC.
-This interpretation is supported by the cluster overlap heatmap, which shows little overlap: most values are zero, with only a few higher-count entries. This suggests limited consistency in how cell types are grouped across the two modalities. Moreover, RNA-seq clustering resulted in 11 clusters, while ATAC-seq produced only 9, further highlighting the deviation from our expectations.
+While the ARI and FMI suggest moderate agreement, the very low cophenetic distance correlation indicates that the global structure of the dendrograms is poorly conserved between RNA and ATAC. 
+This interpretation is supported by the cluster overlap heatmap, which displays mostly zero values with a few clearly enriched entries, reflecting specific and biologically meaningful overlaps between certain RNA- and ATAC-based clusters. This suggests that although the overall clustering structures differ, there is still targeted consistency in how some cell types are grouped across the two modalities. Moreover, RNA-seq clustering resulted in 11 clusters, while ATAC-seq produced only 9, further highlighting the deviation from our expectations.
  
 ## Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
 
