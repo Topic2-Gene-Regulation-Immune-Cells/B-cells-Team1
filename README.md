@@ -86,7 +86,7 @@ High Gini values indicate strong cell-type specificity, highlighting distinct re
 ![Gini plot after CRE-Cluster](figures/Top-Gini%20CRE-%20Cluster_%20UMAP.png)
 
 ![Gini CRE-Cluster Heatmap](figures/Cluster-specific%20CRE%20accessibility%20patterns.png)
-CREs can be clustered based on their ATAC signal. Clustering into 10 groups yields a clear structure, which supports our initial hypothesis, as we are analyzing 10 distinct lineages.
+CREs can be clustered based on their ATAC signal. Clustering into ten groups reveals a clear structure, which supports our initial hypothesis, as we are analyzing ten distinct lineages. The heatmap indicates that most clusters are specifically associated with one to three lineages. This suggests that the underlying chromatin-based regulatory patterns are largely organized in a lineage-specific manner.
 
 
 ### Can one visualize the behaviour of clustered regions?
