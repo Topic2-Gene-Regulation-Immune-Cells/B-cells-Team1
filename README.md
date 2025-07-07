@@ -30,33 +30,35 @@ They can also be accesed in '/data':
 
 ### Is the signal (median, mean, std) dependent on the sequencing depth, number of input cells, or another QC metric?
 ![ATAC QC vs STAT](figures/heatmap_qc_vs_atac.png)
-This heatmap shows the correlation between ATAC statistics and the QC-metric. The signal shows the strongest dependence on InputCellNumber, with correlation coefficients of 0.67 (mean), 0.6 (std), and 0.47 (median). The other OC metrics show only weak correlations. This means that signal strength is most strongly associated with the number of input cells. 
+This heatmap shows the correlation between ATAC statistics and the QC-metric. The signal (mean) shows the strongest dependence with the Paired.read.after.removing.PCR.duplication. The std and var is highly dependend on the Replicate.cor. The other OC metrics show only weak correlations. 
 
 ![mean ATAC peaks](figures/mean_ATAC_peaks_with_dendrogramm.png)
 Cell types were hierarchically clustered based on their genome-wide ATAC signal. The barplot shows normalized mean accessibility per cell type, colored by lineage. The accompanying dendrogram reflects epigenomic similarity and highlights both lineage-specific patterns and cross-lineage relationships in chromatin accessibility.
 
 ## How variable is the chromatin signal for CREs across cells?
 ### Should some peaks be removed for downstream analysis due to lack of signal?
-![Hexbin: mean vs std](figures/Hexbin_mean_vs_std.png)
-Different Hexbin Plots were used to determine peaks that should be removed (peaks with low mean, std, var). The red box shows the peaks that were removed our of the data set due to lack of signal. 
+The hexplots show no significant peaks that should be removed. 
 
 ### Do promoters exibit specific signals that make them differ from enhancers?
 
 ![Lineplot: mean signal vs TSS-distance](figures/Lineplot_mean_signal_TSS_distance.png)
-This plot shows how the mean ATAC-signal depends on the distance to the TSS. The red box shows the peaks that are are labeles as promoters while the other ones are labeled as enhancers. The plot shows that promoters exhibit a lower ATAC-mean-signal than enhancers which means the chromatin in promoters is more closed than in enhancers. 
+This plot shows how the mean ATAC-signal depends on the distance to the TSS. The red box shows the peaks that are are labeles as promoters while the other ones are labeled as enhancers. The plot shows that promoters exhibit a higher ATAC-mean-signal than enhancers which means the chromatin in promoters is more open than in enhancers. 
 
 ![boxplot: signal of Promotor vs Enhancer scaled](figures/Boxplot_mean_per_Promotor_vs_Enhancer_not_scaled.png)
-A two-sample t-test comparing Promoter and Enhancer regions showed a highly significant difference in mean ATAC signal (T = –34.13, p = 1.05 × 10⁻²³⁹). This result suggest a strong distinction between the ATAC mean signal of the two region types. 
+A two-sample t-test comparing Promoter and Enhancer regions showed a highly significant difference in mean ATAC signal (T-statistic: 87.445, p-value: 0.000e+00). This result suggest a strong distinction between the ATAC mean signal of the two region types. 
 
 ### Is there a relationship between the signal and the distance to the TSS?
 
 ![mean ATAC-signal vs TSS-distance](figures/scatterplot_peak_vs_TSS_distance.png)
-This scatterplot shows no meaningful relationship between ATAC signal and distance to the TSS. Although the Pearson correlation is statistically significant (r = −0.004, p = 9.23e-03), the effect size is negligible. The data suggest that chromatin accessibility (as measured by ATAC) is not systematically higher or lower depending on proximity to transcription start sites.
+This scatterplot shows no significant linear relationship between ATAC signal and distance to the TSS, the Pearson correlation is r = −0.001, p = 0.561. But visible in the plot is a spike in ATAC signal near TSS (0 bp), which rapidly decreases with distance. So despite there being no global linear relationship, there is a strong local increase in ATAC signal near TSS, indicating biological relevance.
+
+![Histogram: ATAC-signal vs TSS-distance](figures/Histogramm_mean_per_TSS_distance.png)
+This local increse in ATAC signal near TSS can be seen in this plot. 
 
 ### Are intronic enhancers different from enhancers outside the transcript.
 
 ![boxplot: intronic vs. non intronic](figures/Boxplot_intronic_vs_non_intronic_enhancer.png)
-A two-sample t-test comparing intonic enhancers and non-intronic enhancers showed a highly significant difference in mean ATAC signal (T = T-statistic: 69.853, p = 0.000e+00). These values show a strong distinction between the ATAC mean signal of the two region types.
+A two-sample t-test comparing intonic enhancers and non-intronic enhancers showed a highly significant difference in mean ATAC signal (T-statistic: -8.911, p-value: 5.087e-19). These values show a strong distinction between the ATAC mean signal of the two region types.
 
 ## Do related cell types cluster together based on their ATAC signal?
 
