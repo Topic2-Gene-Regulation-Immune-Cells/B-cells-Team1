@@ -14,3 +14,7 @@ data/ATAC_stat_high_signal_peaks.csv
 data/ATAC_regiontype.csv
 data/ATAC_stat_high_signal_peaks_scaled.csv
 data/ATAC_with_TSS.csv
+data/converted_ATAC_seq_info.csv
+data/ImmGenATAC18_AllOCRsInfo.csv
+data/mmc2.csv
+data/converted_ATAC_seq_info.CSV
