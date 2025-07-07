@@ -32,9 +32,8 @@ They can also be accesed in '/data':
 ![ATAC QC vs STAT](figures/heatmap_qc_vs_atac.png)
 This heatmap shows the correlation between ATAC statistics and the QC-metric. The signal shows the strongest dependence on InputCellNumber, with correlation coefficients of 0.67 (mean), 0.6 (std), and 0.47 (median). The other OC metrics show only weak correlations. This means that signal strength is most strongly associated with the number of input cells. 
 
-### Should some cell types be removed from downstream analysis, or should we apply additional normalization?
-
 ![mean ATAC peaks](figures/mean_ATAC_peaks_with_dendrogramm.png)
+Cell types were hierarchically clustered based on their genome-wide ATAC signal. The barplot shows normalized mean accessibility per cell type, colored by lineage. The accompanying dendrogram reflects epigenomic similarity and highlights both lineage-specific patterns and cross-lineage relationships in chromatin accessibility.
 
 ## How variable is the chromatin signal for CREs across cells?
 ### Should some peaks be removed for downstream analysis due to lack of signal?
@@ -71,8 +70,9 @@ The UMAP on the left shows CREs colored by their KMeans cluster assignment, whil
 
 ### Can one quantify the similarity of cell types in a sorted matrix?
 
+**Principal Component Analysis: Lineage and Cluster Mapping**
 ![PCA for celltypes and clusters with k=5](figures/PCA_k5_ct_clusters.png)
-Principal Component Analysis: colored by lineage and shaped by cluster (k = 5) to quantify if clusters are celltype specific. Cluster 1 is pretty much B-Cell specific. 
+PCA of chromatin accessibility data reveals some lineage-specific structure. Points are colored by cell lineage and shaped by k-means cluster assignment (k = 5). While Cluster 1 aligns strongly with B cells, overall separation between clusters is limited, indicating that chromatin signal alone does not fully resolve cell types.
 
 ![OCR landscape in a UMAP](figures/OCR%20landscape%20-%20UMAP.png)
 
@@ -109,8 +109,6 @@ Fowlkes-Mallows Index: 0.592
 Cophenetic distance correlation: r = 0.090, p = 0.0000
 
 ![confusion matrix heatmap](figures/Cluster_Overlap_Heatmap_RNA_ATAC.png)
-
-
  
 ## Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
 ![Histogram CRE-TSS distance](figures/Systematically%20Associated%20CRE-TSS%20distance.png)
@@ -123,7 +121,6 @@ tba
 
 ### How many CREs are associated with genes?
 ![Histogram associated vs orphan CREs](figures/CREs%20within%20100%20kb%20of%20a%20gene%20vs.%20orphan%20CREs.png)
-
 
 ### Is every promoter associated with a gene?
 63 of 32241 Promotors are not associated with a gene, see also figure 'figure/Distribution of gene‐counts per promoter'
@@ -141,7 +138,6 @@ tba
 
 ![Histogram: regression for all celltypes](figures/Histogram_regression_all_celltypes.png)
 This shows how well the ATAC signal explains the RNA signal for all celltypes. For most genes (R² ≈ 0) the  ATAC data explains almost none of their expression levels across cell types. But for the genes with a higher R², the chromatin accessibility seems to have a stronger predictive value.
-
 
 ### How do the coefficients differ when it is performed on B-cells alone?
 
