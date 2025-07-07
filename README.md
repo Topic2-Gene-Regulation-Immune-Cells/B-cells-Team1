@@ -69,11 +69,10 @@ KMeans clustering does accurately cluster the lineages. One can see that all T c
 
 ### Can one quantify the similarity of cell types in a sorted matrix?
 ![PCA featuring PCA 4 vs PCA 6](figures/PCA_peaks_PC4_vs_PC6.png)
-While Cluster 6 aligns strongly with B cells, overall separation between clusters is limited, indicating that chromatin signal alone does not fully resolve cell types. Whereas one can see the strong relationship of T-Cells in Cluster 0.
 
 **Principal Component Analysis: Lineage and Cluster Mapping**
 ![PCA for celltypes and clusters with k=5](figures/PCA_k10_ct_clusters.png)
-PCA of chromatin accessibility data reveals some lineage-specific structure. Points are colored by cell lineage and shaped by k-means cluster assignment (k = 5). While Cluster 1 aligns strongly with B cells, overall separation between clusters is limited, indicating that chromatin signal alone does not fully resolve cell types.
+PCA of chromatin accessibility data reveals some lineage-specific structure. Points are colored by cell lineage and shaped by k-means cluster assignment (k = 5). While Cluster 6 aligns strongly with B cells, overall separation between clusters is limited, indicating that chromatin signal alone does not fully resolve cell types. Whereas one can see the strong relationship of T-Cells in Cluster 0.
 
 ![OCR landscape in a UMAP](figures/OCR%20landscape%20-%20UMAP.png)
 This UMAP plot represents the landscape of open chromatin regions (OCRs) across all analyzed cell types. Each point corresponds to a single OCR, positioned based on its chromatin accessibility profile.
