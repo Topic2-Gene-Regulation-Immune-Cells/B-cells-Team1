@@ -9,13 +9,12 @@ B lymphocytes (B cells), key effectors of adaptive immunity, arise from hematopo
 Each stage is governed by a distinct constellation of transcription factors and epigenetic modifications, creating unique accessibility and expression signatures that underpin B-cell specification, activation, and long-term immunity.
 
 ## Data & Recources
-Our coverted tables in csv-format can be found in this Heibox link: https://heibox.uni-heidelberg.de/d/8eb927e475024eb3ae66/
+The original RNA and ATAC data are in our '/data' folder
+- 'mmc2.xlsx'
+- 'ImmGenATAC18_AllORsInfo.csv'
 
-They can also be accesed in '/data':
-- '1.ATAC-Seq data.CSV'
-- '2.RNA-Seq data.CSV'
-- 'ATAC_QCmatric.CSV'
-- 'ATAC_QCmatric_ReadStatistics.CSV'
+The remaining original datasets can be found in this Heibox link: https://heibox.uni-heidelberg.de/d/8eb927e475024eb3ae66/
+
 
 ## Overview of our analytical workflow
 - **Exploratory Data Analysis**: Correlation heatmaps, distribution plots, outlier detection
@@ -69,12 +68,15 @@ The UMAP on the left shows CREs colored by their KMeans cluster assignment, whil
 KMeans clustering does accurately cluster the lineages. One can see that all T cell lineages UMAPS are in the same area capturing the relationships. All lineages are located in a different area of the UMAP. 
 
 ### Can one quantify the similarity of cell types in a sorted matrix?
+![PCA featuring PCA 4 vs PCA 6](figures/PCA_peaks_PC4_vs_PC6.png)
 
 **Principal Component Analysis: Lineage and Cluster Mapping**
-![PCA for celltypes and clusters with k=5](figures/PCA_k5_ct_clusters.png)
+![PCA for celltypes and clusters with k=5](figures/PCA_k10_ct_clusters.png)
 PCA of chromatin accessibility data reveals some lineage-specific structure. Points are colored by cell lineage and shaped by k-means cluster assignment (k = 5). While Cluster 1 aligns strongly with B cells, overall separation between clusters is limited, indicating that chromatin signal alone does not fully resolve cell types.
 
 ![OCR landscape in a UMAP](figures/OCR%20landscape%20-%20UMAP.png)
+This UMAP plot represents the landscape of open chromatin regions (OCRs) across all analyzed cell types. Each point corresponds to a single OCR, positioned based on its chromatin accessibility profile.
+High Gini values indicate strong cell-type specificity, highlighting distinct regulatory elements active in individual lineages.
 
 ## Can one define different classes of peaks based on the signal and the signal variation across cells?
 
@@ -135,9 +137,6 @@ Detection of gene association by checking whether the B cell peaks have ≥1 gen
 ### Are some promoters associated with other genes?
 ![Histogram gene counts per promotor](figures/Distribution%20of%20gene‐counts%20per%20promoter.png)
 This Histogram depicts the promotor gene overlap distribution.Most promoters overlap exactly one gene, with progressively fewer overlapping two or more.
-
-### What is the closest associated CRE to a gene?
-tba 
 
 ### Are there CREs that control several genes?
 ![Histogram gene counts per enhancer](figures/Distribution%20of%20gene‐counts%20per%20distal%20ATAC‐seq%20enhancer.png)
@@ -238,7 +237,7 @@ We already generated a list of genes with high chromatin accessibility in B cell
 ![Line plot Subcluster of genes - Accessibility](figures/Lineplot_Subcluster_Bcells_Accessibility.png)
 
 ![Top B-cell specific genese](figures/ATAC_signal_top_CREs_Bcells.png)
-Clustering of B cell–specific genes based on their chromatin accessibility revealed three distinct clusters. While the clusters are not clearly separable across all cell types, the mean accessibility profiles allow for a clearer distinction. Cluster 1 contains genes with the highest mean ATAC accessibility. Notably, this cluster shows a strong overlap with the top B cell–specific genes identified based on high ΔR² values, indicating that chromatin accessibility explains gene expression particularly well in B cells. This suggests that genes with both high overall accessibility and strong B cell–specific regulation tend to cluster together.
+Clustering of B cell–specific genes reveals three distinct groups with clearly different ATAC accessibility across cell types. As a result, the clusters are well separable based on their mean accessibility profiles. Cluster 1 contains the genes with the highest mean ATAC accessibility and shows complete overlap with the top B cell–specific genes identified based on high ΔR² values. This indicates that genes with high chromatin accessibility across cell types are exactly those most strongly associated with B cell–specific regulation.
 
 ## Team 
 Group 1 (B cells): Liska Großmann, Celine Krogmann, Annalena Kotz, Lilli Schmitt
