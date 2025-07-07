@@ -69,6 +69,7 @@ KMeans clustering does accurately cluster the lineages. One can see that all T c
 
 ### Can one quantify the similarity of cell types in a sorted matrix?
 ![PCA featuring PCA 4 vs PCA 6](figures/PCA_peaks_PC4_vs_PC6.png)
+While Cluster 6 aligns strongly with B cells, overall separation between clusters is limited, indicating that chromatin signal alone does not fully resolve cell types. Whereas one can see the strong relationship of T-Cells in Cluster 0.
 
 **Principal Component Analysis: Lineage and Cluster Mapping**
 ![PCA for celltypes and clusters with k=5](figures/PCA_k10_ct_clusters.png)
