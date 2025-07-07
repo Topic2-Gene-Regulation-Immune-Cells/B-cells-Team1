@@ -110,9 +110,11 @@ Gene mit weniger Varianz rauskicken, 10 mit weniger Variabilität score rausnehm
 Our initial hypothesis was that clustering based on chromatin accessibility (ATAC-seq) and gene expression (RNA-seq) would reveal similar lineage relationships. Specifically, we expected that the major cell lineages would each form distinct and matching clusters in both datasets. We anticipated 10 RNA-seq clusters and 10 ATAC-seq clusters, each reflecting similar regulatory programs.
 However, the hierarchical clustering dendrograms do not support this clean one-to-one relationship. Clusters were labeled by assigning them the lineage most proportionally represented within them, since some lineages are assigned to more than one cluster. Looking at the cluster labels, you can see that some lineages appear more than once and some don't appear at all. 
 To quantitatively assess the similarity between the two clusterings, we used three metrics:
-- **Adjusted Rand Index (ARI): 0.534
-- **Fowlkes-Mallows Index (FMI): 0.592
-- **Cophenetic distance correlation: r = 0.090, p = 0.0000
+
+- Adjusted Rand Index (ARI): 0.534
+- Fowlkes-Mallows Index (FMI): 0.592
+- Cophenetic distance correlation: r = 0.090, p = 0.0000
+
 While the ARI and FMI suggest moderate agreement, the very low cophenetic distance correlation indicates that the global structure of the dendrograms is poorly conserved between RNA and ATAC.
 This interpretation is supported by the cluster overlap heatmap, which shows little overlap: most values are zero, with only a few higher-count entries. This suggests limited consistency in how cell types are grouped across the two modalities. Moreover, RNA-seq clustering resulted in 17 clusters, while ATAC-seq produced only 9, further highlighting the deviation from our expectations.
  
