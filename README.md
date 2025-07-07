@@ -51,7 +51,7 @@ A two-sample t-test comparing Promoter and Enhancer regions showed a highly sign
 ### Is there a relationship between the signal and the distance to the TSS?
 
 ![mean ATAC-signal vs TSS-distance](figures/scatterplot_peak_vs_TSS_distance.png)
-The Pearson correlation analysis gave the values: r = -0.004, p = 9.23e-03
+This scatterplot shows no meaningful relationship between ATAC signal and distance to the TSS. Although the Pearson correlation is statistically significant (r = −0.004, p = 9.23e-03), the effect size is negligible. The data suggest that chromatin accessibility (as measured by ATAC) is not systematically higher or lower depending on proximity to transcription start sites.
 
 ### Are intronic enhancers different from enhancers outside the transcript.
 
