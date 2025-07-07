@@ -94,8 +94,9 @@ Here you can see the average ATAC signal for each cluster, aggregated across all
 ### Can one define B-cell specific CRE clusters?
 As shown in the heatmap in the heatmap of iv. a), only cluster 6 is B cell-specific, as the mean accessibility is high exclusively in B cells. Cluster 9 does not show lineage specificity but B cells, gdT cells, and myeloid cells all exhibit similarly high mean accessibility.
 
-### Are there differences between the B-cell CRE clusters? When and how long are they active?
-The UMAP of iii. a) shows that cluster 6 is overlapping in B-cells and Stem&Prog-cells. HELP wie soll man das formulieren?
+### When and how long is the B-cell specific cluster active?
+B-cell specific cluster 6 becomes accessible already in s
+Stem and Progenitor cells, indicating that its activation begins early during hematopoiesis. It remains accessible throughout B-cell differentiation, suggesting a long-lasting regulatory role. This sustained activity implies that cluster 6 may be involved in establishing and maintaining B-cell identity over an extended developmental window.
 
 
 ## Does clustering of the gene expression matrix show the same relationships between cell types as the ATAC-seq data?
