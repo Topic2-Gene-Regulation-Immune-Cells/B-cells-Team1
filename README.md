@@ -65,10 +65,8 @@ A two-sample t-test comparing intonic enhancers and non-intronic enhancers showe
 ### Does the clustering reproduce known relationship between cells?
 
 ![Comparison of CRE clusters and lineages one by one, top 2,5%](figures/UMAP_Gini_CREs_cluster_vs_each_lineage_top2,5percent.png)
-
-- Dendrogramm um Verwandheit zu zeigen
-
-The UMAP on the left shows CREs colored by their KMeans cluster assignment, while the 10 UMAPs on the right display CREs associated with each of the 10 analyzed lineages. However, the KMeans clustering does not accurately capture known relationships between lineages, as most lineage-specific CREs — including those from B cells — are dispersed throughout the entire UMAP space.
+The UMAP on the left shows CREs colored by their KMeans cluster assignment, while the 10 UMAPs on the right display CREs associated with each of the 10 analyzed lineages.
+KMeans clustering does accurately cluster the lineages. One can see that all T cell lineages UMAPS are in the same area capturing the relationships. All lineages are located in a different area of the UMAP. 
 
 ### Can one quantify the similarity of cell types in a sorted matrix?
 
@@ -94,7 +92,7 @@ CREs can be clustered based on their ATAC signal. Clustering into 10 groups yiel
 Here you can see the average ATAC signal for each cluster, aggregated across all cell types. The clusters clearly differ in their "Mean ATAC singal" ranges.
 
 ### Can one define B-cell specific CRE clusters?
-As shown in the heatmap in the heatmap of iv. a), only cluster 6 is B cell-specific, as the mean accessibility is high exclusively in B cells. Cluster 9 does not show lineage specificity but B cells, gdT cells, and myeloid cells all exhibit similarly high mean accessibility.
+As shown in the heatmap in the heatmap of iv. a), only cluster 6 is B cell-specific, as the mean accessibility is high exclusively in B cells.
 
 ### When and how long is the B-cell specific cluster active?
 B-cell specific cluster 6 becomes accessible already in s
@@ -104,21 +102,18 @@ Stem and Progenitor cells, indicating that its activation begins early during he
 ## Does clustering of the gene expression matrix show the same relationships between cell types as the ATAC-seq data?
 ![RNA vs ATAC dendrogramm 10 Cluster](figures/dendrogram_RNA_ATAC_10_clusters.png)
 
-- Cluster nach lineage anfärben
-Gene mit weniger Varianz rauskicken, 10 mit weniger Variabilität score rausnehmen
-
 ![confusion matrix heatmap](figures/Cluster_Overlap_Heatmap_RNA_ATAC.png)
 
 Our initial hypothesis was that clustering based on chromatin accessibility (ATAC-seq) and gene expression (RNA-seq) would reveal similar lineage relationships. Specifically, we expected that the major cell lineages would each form distinct and matching clusters in both datasets. We anticipated 10 RNA-seq clusters and 10 ATAC-seq clusters, each reflecting similar regulatory programs.
 However, the hierarchical clustering dendrograms do not support this clean one-to-one relationship. Clusters were labeled by assigning them the lineage most proportionally represented within them, since some lineages are assigned to more than one cluster. Looking at the cluster labels, you can see that some lineages appear more than once and some don't appear at all. 
 To quantitatively assess the similarity between the two clusterings, we used three metrics:
 
-- Adjusted Rand Index (ARI): 0.534
-- Fowlkes-Mallows Index (FMI): 0.592
-- Cophenetic distance correlation: r = 0.090, p = 0.0000
+- Adjusted Rand Index (ARI): 0,680
+- Fowlkes-Mallows Index (FMI): 0,726
+- Cophenetic distance correlation: r = 0,073, p = 0.0000
 
 While the ARI and FMI suggest moderate agreement, the very low cophenetic distance correlation indicates that the global structure of the dendrograms is poorly conserved between RNA and ATAC.
-This interpretation is supported by the cluster overlap heatmap, which shows little overlap: most values are zero, with only a few higher-count entries. This suggests limited consistency in how cell types are grouped across the two modalities. Moreover, RNA-seq clustering resulted in 17 clusters, while ATAC-seq produced only 9, further highlighting the deviation from our expectations.
+This interpretation is supported by the cluster overlap heatmap, which shows little overlap: most values are zero, with only a few higher-count entries. This suggests limited consistency in how cell types are grouped across the two modalities. Moreover, RNA-seq clustering resulted in 11 clusters, while ATAC-seq produced only 9, further highlighting the deviation from our expectations.
  
 ## Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
 
