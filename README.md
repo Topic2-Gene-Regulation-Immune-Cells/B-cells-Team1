@@ -42,7 +42,7 @@ The hexplots show no significant peaks that should be removed.
 ### Do promoters exibit specific signals that make them differ from enhancers?
 
 ![Lineplot: mean signal vs TSS-distance](figures/Lineplot_mean_signal_TSS_distance.png)
-This plot shows how the mean ATAC-signal depends on the distance to the TSS. The red box shows the peaks that are are labeles as promoters while the other ones are labeled as enhancers. The plot shows that promoters exhibit a higher ATAC-mean-signal than enhancers which means the chromatin in promoters is more open than in enhancers. 
+This plot shows how the mean ATAC-signal depends on the distance to the TSS. The red box shows the peaks that are labeled as promoters while the other ones are labeled as enhancers. The plot shows that promoters exhibit a higher ATAC-mean-signal than enhancers which means the chromatin in promoters is more open than in enhancers. 
 
 ![boxplot: signal of Promotor vs Enhancer scaled](figures/Boxplot_mean_per_Promotor_vs_Enhancer_not_scaled.png)
 A two-sample t-test comparing Promoter and Enhancer regions showed a highly significant difference in mean ATAC signal (T-statistic: 87.445, p-value: 0.000e+00). This result suggest a strong distinction between the ATAC mean signal of the two region types. 
@@ -53,7 +53,7 @@ A two-sample t-test comparing Promoter and Enhancer regions showed a highly sign
 This scatterplot shows no significant linear relationship between ATAC signal and distance to the TSS, the Pearson correlation is r = −0.001, p = 0.561. But visible in the plot is a spike in ATAC signal near TSS (0 bp), which rapidly decreases with distance. So despite there being no global linear relationship, there is a strong local increase in ATAC signal near TSS, indicating biological relevance.
 
 ![Histogram: ATAC-signal vs TSS-distance](figures/Histogramm_mean_per_TSS_distance.png)
-This local increse in ATAC signal near TSS can be seen in this plot. 
+This local increase in ATAC signal near TSS can be seen in this plot. 
 
 ### Are intronic enhancers different from enhancers outside the transcript.
 
@@ -183,10 +183,10 @@ This plot also consideres the cell-type-specific effects by showing the relation
 ### Are there differences between activating and repressing CREs?
 
 ![R^2 by CRE type](figures/boxplot_variance_by_CRE_type.png)
-This boxplot shows the R² of activating and repressing CREs in B-Cells. A two-sample t-test showed no statistically significant difference between the two groups (T = –1.64, p = 0.11). This means that for neither activating or repressing CREs the chromatin-accesibility explains the genexpression more than for the other group.
+This boxplot shows the R² of activating and repressing CREs in B-Cells. A two-sample t-test showed no statistically significant difference between the two groups (T-statistic: 0.335, p-value: 7.390e-01). This means that for neither activating or repressing CREs the chromatin-accesibility explains the genexpression more than for the other group.
 
 ![ATAC mean by CRE type](figures/comparison_of_ATAC_mean_activating_repressing_CREs.png)
-This plot compares the ATAC-mean-signals od repression and activating CREs. A two-sample t-test revealed a statistically significant difference between the two groups (T = –3.36, p < 0.001), indicating a strong difference in their means. It indicates that for activating CREs the chromatin-accesibility is lower than for repressing CREs. 
+This plot compares the ATAC-mean-signals od repression and activating CREs. A two-sample t-test revealed a statistically significant difference between the two groups (T-statistic: 2.295, p-value: 2.184e-02), indicating a strong difference in their means. It indicates that for activating CREs the chromatin-accesibility is lower than for repressing CREs. 
 
 ![KDE plot: ATAC mean by CRE type](figures/KDE_plot_ATAC_mean_activating_repressing_CREs.png)
 This plot also shows the ATAC-mean-signal for activating and repressing CREs. It shows the same results, that the chromatin-accesibility for repressing CREs is higher than for activating CREs. 
@@ -204,10 +204,10 @@ This plot shows that promoters mainly act activating but still can act through r
 ### Where are repressing CREs located compared to activating CREs?
 
 ![location of repressing and activating CREs on chromosomes](figures/location_of_activating_repressing_CREs_chromosome.png)
-This plots shows the location of repressing and activating CREs on the different chromosomes. It shows now significant trend although it indicates that on chromosome 19 and 4 there are only activating CREs, while an chromosome 9 there are only repressing CREs. 
+This plots shows the location of repressing and activating CREs on the different chromosomes. It shows now significant trend although it indicates that on chromosome 1, 2, 7, 8, 10, 13, 19 and X there are only activating CREs, while an chromosome 5 and 6 there are only repressing CREs. 
 
 ![location of repressing and activating CREs to TSS](figures/location_of_activating_repressing_CREs_TSS.png)
-The KDE plot considers the location of repressing and activating CREs regarding the distance to the TSS. It shows that repressing CREs are a bit closer to the TSS than activating CREs.
+The KDE plot considers the location of repressing and activating CREs regarding the distance to the TSS. It shows that activating CREs are a bit closer to the TSS than repressing CREs.
 
 
 ### Are there CREs that are repressing for one gene but activating for another gene?
@@ -223,7 +223,7 @@ This is a picture of an interactive network that can be looked at in the noteboo
 ![Clusering not including the effect direction on gene expression](figures/Clustering_CREs_non_directional.png)
 ![Clusering including the effect direction on gene expression](figures/Clustering_CREs_directional.png)
 ![Comparision of Clustering](figures/Cluster_Overlap_Heatmap.png)
-This plot shows that the clustering is dependend on the effect direction of gene expression. The same result is obtained by the Adjusted Rand Index with a value of 0.354.
+This plot shows that there is a moderate to good similarity between the two clusterings. The same result is obtained by the Adjusted Rand Index with a value of 0.434.
 
 ## Can one cluster genes based on their expression profiles?
 
