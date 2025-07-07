@@ -111,28 +111,32 @@ Cophenetic distance correlation: r = 0.090, p = 0.0000
 ![confusion matrix heatmap](figures/Cluster_Overlap_Heatmap_RNA_ATAC.png)
  
 ## Can one use correlation analysis and distance information to associate ATAC-seq regions with gene expression?
-![Histogram CRE-TSS distance](figures/Systematically%20Associated%20CRE-TSS%20distance.png)
 
 ### Where are associated CREs located with respect to the TSS?
-![Donutplot of CRE Distribution](figures/CRE%20Feature%20Distribution.png)
+![Histogram CRE-TSS distance](figures/Systematically%20Associated%20CRE-TSS%20distance.png)
+This Histogram visualizes the distance of associated CREs with the corresponding TSS. 
 
 ### Where are the most associated CREs located?
-tba
+![Donutplot of CRE Distribution](figures/CRE%20Feature%20Distribution.png)
+Here we annotated the B-cell peaks by priority (promoter (±1 kb), exon, intron, intergenic) using pyranges to report the relative frequencies. Most CREs are located in intron (41.8%) and intergenetic regions (40.1%).   
 
 ### How many CREs are associated with genes?
 ![Histogram associated vs orphan CREs](figures/CREs%20within%20100%20kb%20of%20a%20gene%20vs.%20orphan%20CREs.png)
+Detection of gene association by checking whether the B cell peaks have ≥1 gene within 100 kb (60.3 %) or none (orphan CREs, 39.7%).
 
 ### Is every promoter associated with a gene?
-63 of 32241 Promotors are not associated with a gene, see also figure 'figure/Distribution of gene‐counts per promoter'
+63 of 32241 Promotors are not associated with a gene, see also figure 'figures/Distribution of gene‐counts per promoter'
 
 ### Are some promoters associated with other genes?
 ![Histogram gene counts per promotor](figures/Distribution%20of%20gene‐counts%20per%20promoter.png)
-
+This Histogram depicts the promotor gene overlap distribution.Most promoters overlap exactly one gene, with progressively fewer overlapping two or more.
 
 ### What is the closest associated CRE to a gene?
+tba 
 
 ### Are there CREs that control several genes?
-
+![Histogram gene counts per enhancer](figures/Distribution%20of%20gene‐counts%20per%20distal%20ATAC‐seq%20enhancer.png)
+Having confirmed that promoters almost invariably overlap exactly one gene (with only a small tail reaching multiple targets; see 'figures/Distribution of gene-counts per promoter'), we next tallied the number of genes associated with enhancers. The resulting enhancer-gene count distribution is strikingly broader: whereas most enhancer still influence only 1 gene, a large fraction of enhancers have no nearby gene at all, and a clear  peak appears at two gene associations—highlighting the more diverse regulatory reach of enhancers compared to promoters.
 ## Can one use regression to associate CREs with gene expression?
 ### How much of the variance of gene expression can be explained for each gene with this approach?
 
